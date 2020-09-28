@@ -1,0 +1,33 @@
+{
+  "name": "UTC Extensions",
+  "description" : "Extension tính điểm tích lũy",
+  "author": {
+    "email": "hung5191917@st.utc.edu.vn"
+ },
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "hello.html",
+    "default_icon": {
+      "19": "utc_logo.png",
+      "38": "utc_logo.png"
+    }
+  },
+  "icons": {
+    "128": "utc_logo.png",
+    "16": "utc_logo.png",
+    "19": "utc_logo.png",
+    "32": "utc_logo.png",
+    "38": "utc_logo.png",
+    "48": "utc_logo.png"
+  },
+  "content_scripts" : [
+      {
+        "matches" : ["https://qldt.utc.edu.vn/*"],
+        "js": [
+          "js/jquery.js",
+          "js/main.js"
+        ]
+      }
+  ]
+}
