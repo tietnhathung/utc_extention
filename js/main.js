@@ -8,20 +8,26 @@ class Diem {
   quydoi10to4(diem) {
     let diem4 = 0;
 
-    if (diem >= 8.5) {
+    if (diem >= 9.5) {
       diem4 = 4;
+    } else if (diem >= 8.5) {
+      diem4 = 3.8;
     } else if (diem >= 8) {
       diem4 = 3.5;
     } else if (diem >= 7) {
       diem4 = 3;
-    } else if (diem >= 6.5) {
+    } else if (diem >= 6) {
       diem4 = 2.5;
     } else if (diem >= 5.5) {
       diem4 = 2;
-    } else if (diem >= 5) {
+    } else if (diem >= 4.5) {
       diem4 = 1.5;
-    } else if (diem >= 4) {
+    }else if (diem >= 4) {
       diem4 = 1;
+    }else if (diem >= 2) {
+      diem4 = 0.5;
+    }else {
+      diem4 = 0;
     }
 
     return diem4;
